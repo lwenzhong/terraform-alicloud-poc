@@ -45,22 +45,6 @@ Using the provider
 Please see [instructions](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs#authentication) on how to configure the Alibaba Cloud Provider.
 
 
-## Developing the Provider
----------------------------
-
-If you wish to work on the provider, you'll first need [Go](http://www.golang.org) installed on your machine (version 1.11+ is *required*). You'll also need to correctly setup a [GOPATH](http://golang.org/doc/code.html#GOPATH), as well as adding `$GOPATH/bin` to your `$PATH`.
-
-To compile the provider, run `make build`. This will build the provider and put the provider binary in the `$GOPATH/bin` directory.
-
-```sh
-$ make build
-...
-$ $GOPATH/bin/terraform-provider-alicloud
-...
-```
-
-Running `make dev` or `make devlinux` or `devwin` will only build the specified developing provider which matchs the local system.
-And then, it will unarchive the provider binary and then replace the local provider plugin.
 
 In order to test the provider, you can simply run `make test`.
 
